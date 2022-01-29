@@ -1,7 +1,7 @@
 #include "Engine.h"
 #include "raylib.h"
 #include "Transform2D.h"
-#include "StartingScene.h"
+#include "GenerationScene.h"
 
 bool Engine::m_applicationShouldClose = false;
 Scene** Engine::m_scenes = new Scene*;
@@ -22,16 +22,13 @@ Engine::Engine()
 void Engine::start()
 {
 	//Initialize window
-	int screenWidth = 700;
+	int screenWidth = 900;
 	int screenHeight = 800;
-	InitWindow(screenWidth, screenHeight, "Intro To C++");
+	InitWindow(screenWidth, screenHeight, "Tamagotchi Generator");
 	SetTargetFPS(0);
 
-	//Declare the scene
-	StartingScene* startingScene = new StartingScene();
-
 	//Start the scene
-	m_currentSceneIndex = addScene(startingScene);
+	m_currentSceneIndex = addScene(new GenerationScene());
 	m_scenes[m_currentSceneIndex]->start();
 }
 
