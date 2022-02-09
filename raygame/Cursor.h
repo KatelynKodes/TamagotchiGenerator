@@ -1,5 +1,6 @@
 #pragma once
 #include "Actor.h"
+#include "raylib.h"
 
 class SpriteComponent;
 class MoveComponent;
@@ -14,6 +15,8 @@ public:
     void update(float deltaTime) override;
 
 private:
-    SpriteComponent* cursorImage;
+    SpriteComponent* m_cursorImage;
+    MoveComponent* m_moveComponent;
+    Vector2 m_mousePosition;
 };
 

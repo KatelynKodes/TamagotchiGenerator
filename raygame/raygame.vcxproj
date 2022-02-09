@@ -182,6 +182,9 @@
     <ClInclude Include="UIText.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\TestCursor.png">
+      <DeploymentContent>true</DeploymentContent>
+    </Image>
     <Image Include="..\..\MathForGames\Images\bullet.png">
       <DeploymentContent>true</DeploymentContent>
     </Image>

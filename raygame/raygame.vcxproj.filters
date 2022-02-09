@@ -135,6 +135,9 @@
     <Image Include="..\..\MathForGames\Images\enemy.png">
       <Filter>Header Files\Images</Filter>
     </Image>
+    <Image Include="..\..\..\..\Downloads\TestCursor.png">
+      <Filter>Header Files\Images</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="raygame.rc" />
